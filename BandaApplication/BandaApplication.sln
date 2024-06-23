@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandaApplication", "BandaApplication\BandaApplication.csproj", "{5AEF557F-9CB2-4DC4-B7C4-396BBC5578CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BandaApplication", "BandaApplication\BandaApplication.csproj", "{5AEF557F-9CB2-4DC4-B7C4-396BBC5578CD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{975D6C6C-6613-4F7C-871C-CE215680D01C} = {975D6C6C-6613-4F7C-871C-CE215680D01C}
 		{D381BCCC-88E6-4968-AE9A-CA137C816818} = {D381BCCC-88E6-4968-AE9A-CA137C816818}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D381BCCC-88E6-4968-AE9A-CA137C816818}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{D381BCCC-88E6-4968-AE9A-CA137C816818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{03BE61DF-92B8-41A9-B4BE-EA9C76209105}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{03BE61DF-92B8-41A9-B4BE-EA9C76209105}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{975D6C6C-6613-4F7C-871C-CE215680D01C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{975D6C6C-6613-4F7C-871C-CE215680D01C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{327FA279-501A-4BB2-8FD1-33B2497F7DFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{975D6C6C-6613-4F7C-871C-CE215680D01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975D6C6C-6613-4F7C-871C-CE215680D01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975D6C6C-6613-4F7C-871C-CE215680D01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327FA279-501A-4BB2-8FD1-33B2497F7DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327FA279-501A-4BB2-8FD1-33B2497F7DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327FA279-501A-4BB2-8FD1-33B2497F7DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327FA279-501A-4BB2-8FD1-33B2497F7DFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

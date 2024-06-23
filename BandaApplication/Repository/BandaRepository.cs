@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class BandaRepository
+    public class BandaRepository : IBandaRepository
     {
         private static List<Banda> Bandas { get; set; } = new List<Banda>();
 

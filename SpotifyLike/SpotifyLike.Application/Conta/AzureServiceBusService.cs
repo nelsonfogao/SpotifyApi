@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace SpotifyLike.Application.Conta
 {
-    public class AzureServiceBusService
+    public class AzureServiceBusService : IAzureServiceBusService
     {
-        private string ConnectionString = "AzureConnectionString";
+        private string ConnectionString = "Endpoint=sb://estudonelson.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=alRIlLmwpi5OSDKYYX+lDwNAPVfWZFT9U+ASbOTqQ8Q=";
 
         public AzureServiceBusService() { }
 

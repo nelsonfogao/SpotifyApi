@@ -2,7 +2,7 @@
 
 using Azure.Messaging.ServiceBus;
 
-string ConnectionString = "AzureConnectionString";
+string ConnectionString = "Endpoint=sb://estudonelson.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=alRIlLmwpi5OSDKYYX+lDwNAPVfWZFT9U+ASbOTqQ8Q=";
 
 ServiceBusClient client;
 ServiceBusProcessor processor;

@@ -11,13 +11,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.AddScoped<MusicaRepository>();
-builder.Services.AddScoped<BandaRepository>();
-builder.Services.AddScoped<AlbumRepository>();
+builder.Services.AddScoped<IMusicaRepository, MusicaRepository>();
+builder.Services.AddScoped<IBandaRepository, BandaRepository>();
+builder.Services.AddScoped<IAlbumRepository, AlbumRepository>();
 
 //Services
-builder.Services.AddScoped<MusicaService>();
-builder.Services.AddScoped<BandaService>();
+builder.Services.AddScoped<IBandaService, BandaService>();
+builder.Services.AddScoped<IMusicaService, MusicaService>();
+
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

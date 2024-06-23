@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SpotifyLike.Repository.Conta
 {
-    public class UsuarioRepository
+    public class UsuarioRepository : IUsuarioRepository
     {
         private static List<Usuario> Usuarios { get; set; } = new List<Usuario>();
 

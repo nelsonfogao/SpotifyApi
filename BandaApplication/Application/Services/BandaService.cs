@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-    public class BandaService
+    public class BandaService : IBandaService
     {
-        private BandaRepository bandaRepository;
+        private readonly IBandaRepository bandaRepository;
 
-        public BandaService(BandaRepository bandaRepository)
+        public BandaService(IBandaRepository bandaRepository)
         {
             this.bandaRepository = bandaRepository;
         }

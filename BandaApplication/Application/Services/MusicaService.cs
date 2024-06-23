@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-    public class MusicaService
+    public class MusicaService : IMusicaService
     {
-        private MusicaRepository musicaRepository;
+        private readonly IMusicaRepository musicaRepository;
 
-        public MusicaService(MusicaRepository musicaRepository)
+        public MusicaService(IMusicaRepository musicaRepository)
         {
             this.musicaRepository = musicaRepository;
         }

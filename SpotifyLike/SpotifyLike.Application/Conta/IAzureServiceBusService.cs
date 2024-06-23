@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repository
+namespace SpotifyLike.Application.Conta
 {
-    public class AlbumRepository : IAlbumRepository
+    public interface IAzureServiceBusService
     {
+        Task SendMessage(Notificacao notificacao);
     }
 }

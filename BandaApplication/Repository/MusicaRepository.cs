@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class MusicaRepository
+    public class MusicaRepository : IMusicaRepository
     {
         private static List<Musica> Musicas { get; set; } = new List<Musica>();
         private static List<Banda> Bandas { get; set; } = new List<Banda>();
-        private BandaRepository bandaRepository;
+        private readonly IBandaRepository bandaRepository;
 
-        public MusicaRepository(BandaRepository bandaRepository)
+        public MusicaRepository(IBandaRepository bandaRepository)
         {
             this.bandaRepository = bandaRepository;
         }

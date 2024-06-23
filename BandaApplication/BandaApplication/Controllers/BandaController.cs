@@ -8,9 +8,9 @@ namespace BandaApplication.Controllers
     [ApiController]
     public class BandaController : ControllerBase
     {
-        private BandaService service;
+        private readonly IBandaService service;
 
-        public BandaController(BandaService service)
+        public BandaController(IBandaService service)
         {
             this.service = service;
         }
@@ -23,7 +23,7 @@ namespace BandaApplication.Controllers
             {
                 Id = new Guid(),
                 Nome = request.Nome,
-                Duracao = request.Duracao,
+                Descricao = request.Descricao,
                 Albums = request.Albums,
             };
 
@@ -69,7 +69,7 @@ namespace BandaApplication.Controllers
             {
                 Id = bandaCriada.Id,
                 Nome = bandaCriada.Nome,
-                Duracao = bandaCriada.Duracao,
+                Descricao = bandaCriada.Descricao,
                 Albums = bandaCriada.Albums,
             };
 

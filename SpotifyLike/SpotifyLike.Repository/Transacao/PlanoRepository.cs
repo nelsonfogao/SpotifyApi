@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpotifyLike.Repository.Transacao
 {
-    public class PlanoRepository
+    public class PlanoRepository : IPlanoRepository
     {
         private SpotifyContext spotifyContext;
 

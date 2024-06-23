@@ -8,9 +8,9 @@ namespace BandaApplication.Controllers
     [ApiController]
     public class MusicaController : ControllerBase
     {
-        private MusicaService service;
+        private readonly IMusicaService service;
 
-        public MusicaController(MusicaService service)
+        public MusicaController(IMusicaService service)
         {
             this.service = service;
         }

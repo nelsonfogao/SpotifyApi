@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SpotifyLike.Repository.Streaming
 {
-    public class BandaRepository
+    public class BandaRepository : IBandaRepository
     {
         private readonly IHttpClientFactory _httpClientFactory = null;
         private int retries = 1;
